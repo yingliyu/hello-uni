@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "圈子",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 200,
+  "usingComponents": {}
+}

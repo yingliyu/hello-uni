@@ -1,0 +1,1 @@
+<view class="content"><view class="text-area"><text class="title">{{title}}</text></view><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index"><view class="list-wrapper">{{''+index+"-我是"+item+''}}</view></block><button type="primary" data-event-opts="{{[['tap',[['pullDownHandle',['$event']]]]]}}" bindtap="__e">刷新数据</button></view>

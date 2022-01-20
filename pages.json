@@ -1,0 +1,91 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "圈子",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":200
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "实时资讯",
+				"navigationBarBackgroundColor": "#00B2EE",
+				"h5": {
+					"pullToRefresh": {
+						"color": "#7D26CD"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#63B8FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/image/tabbar/im-contacts.png",
+					"selectedIconPath": "static/image/tabbar/im-contacts_active.png",
+					"text": "圈子"
+				},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/image/tabbar/grid.png",
+				"selectedIconPath": "static/image/tabbar/grid_active.png",
+				"text": "新闻"
+			}, {
+				"pagePath": "pages/home/home",
+				"iconPath": "static/image/tabbar/list.png",
+				"selectedIconPath": "static/image/tabbar/list_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/image/tabbar/me.png",
+				"selectedIconPath": "./static/image/tabbar/me_active.png",
+				"text": "我"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "Hello",
+		"navigationBarBackgroundColor": "#228B22",
+		"backgroundColor": "#3CB371",
+		"enablePullDownRefresh": true,
+		"backgroundTextStyle": "light"
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "详情页",
+			"path": "pages/detail/detail",
+			"query": "id=80"
+		}]
+	}
+
+}

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/home/home"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Hello",
+    "navigationBarBackgroundColor": "#228B22",
+    "backgroundColor": "#3CB371",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#63B8FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tabbar/im-contacts.png",
+        "selectedIconPath": "static/image/tabbar/im-contacts_active.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/image/tabbar/grid.png",
+        "selectedIconPath": "static/image/tabbar/grid_active.png",
+        "text": "新闻"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/image/tabbar/list.png",
+        "selectedIconPath": "static/image/tabbar/list_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/image/tabbar/me.png",
+        "selectedIconPath": "./static/image/tabbar/me_active.png",
+        "text": "我"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
