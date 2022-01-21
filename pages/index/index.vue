@@ -4,9 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<view class="list-wrapper" v-for="(item,index) in list" :key='index+item'>
+		<navigator url="../detail/detail" class="list-wrapper" v-for="(item,index) in list" :key='index+item'>
 			{{index}}-我是{{item}}
-		</view>
+		</navigator>
 		<button type="primary" @click="pullDownHandle">刷新数据</button>
 	</view>
 </template>
@@ -57,6 +57,8 @@
 		// flex-direction: column;
 		// align-items: center;
 		// justify-content: center;
+		background:#D1EEEE url('../../static/bg1.png') no-repeat;
+		background-size:contain;
 		padding: 10rpx;
 		.list-wrapper{
 			height: 100px;

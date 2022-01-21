@@ -5,7 +5,7 @@
 			"style": {
 				"navigationBarTitleText": "圈子",
 				"enablePullDownRefresh": true,
-				"onReachBottomDistance":200
+				"onReachBottomDistance": 200
 			}
 		},
 		{
@@ -23,6 +23,7 @@
 		{
 			"path": "pages/user/user",
 			"style": {
+				"navigationBarTitleText": "用户中心",
 				"enablePullDownRefresh": false
 			}
 
@@ -45,24 +46,25 @@
 		"selectedColor": "#63B8FF",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [
-			{
-					"pagePath": "pages/index/index",
-					"iconPath": "static/image/tabbar/im-contacts.png",
-					"selectedIconPath": "static/image/tabbar/im-contacts_active.png",
-					"text": "圈子"
-				},
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tabbar/im-contacts.png",
+				"selectedIconPath": "static/image/tabbar/im-contacts_active.png",
+				"text": "圈子"
+			},
 			{
 				"pagePath": "pages/message/message",
 				"iconPath": "static/image/tabbar/grid.png",
 				"selectedIconPath": "static/image/tabbar/grid_active.png",
 				"text": "新闻"
-			}, {
+			},
+			{
 				"pagePath": "pages/home/home",
 				"iconPath": "static/image/tabbar/list.png",
 				"selectedIconPath": "static/image/tabbar/list_active.png",
 				"text": "首页"
 			},
+
 			{
 				"pagePath": "pages/user/user",
 				"iconPath": "static/image/tabbar/me.png",

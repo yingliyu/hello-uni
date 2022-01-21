@@ -1,5 +1,10 @@
 {
   "navigationBarTitleText": "实时资讯",
   "navigationBarBackgroundColor": "#00B2EE",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar",
+    "test": "/components/test",
+    "test-a": "/components/a",
+    "test-b": "/components/b"
+  }
 }

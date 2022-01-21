@@ -33,6 +33,10 @@
 
 			}
 		},
+		// 获取上一页传入的数据
+		onLoad(options) {
+			console.log(options)
+		},
 		methods: {
 
 		}

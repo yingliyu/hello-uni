@@ -1,10 +1,18 @@
 <template>
 	<view>
-		数据绑定
-		<view>{{msg+" !!!"}}</view>
-		<view>{{1+1}}</view>
-		<view>{{flag?'真true':'假false'}}</view>
+		<text space="emsp">{{flag?'真true! ':'假false! '}} </text>
+		<text>{{msg+" !!!"}}</text>
+		
+		<navigator url="../detail/detail?id=6&name=lemon" >
+			跳转至详情页Switch
+		</navigator>
+		<navigator url="../message/message" open-type="switchTab">跳转至TabBar中的新闻页-></navigator>
+		<navigator url="../detail/detail" open-type="redirect">跳转至详情页Redirect-></navigator>
+		
 		<image :src="imgUrl" mode="aspectFit"></image>
+		<button type="primary" @click="toDetailPage">跳转至详情页</button>
+		<button type="primary" @click="toNewsPage">跳转至TabBar新闻页</button>
+		<button type="primary" @click="redirectToDetailPage">跳转至详情页并关闭当前页</button>
 		<view v-for="item in list" :key='item.id'>
 			序号：{{item.id}}- 姓名：{{item.name}}-年龄：{{item.age}}
 		</view>
@@ -41,11 +49,41 @@
 		methods: {
 			clickHandle(num,event){
 				console.log('click me',num,event)
+			},
+			toDetailPage(){
+				uni.navigateTo({
+					url:'../detail/detail?id=6&name=lemon'
+				})
+			},
+			toNewsPage(){
+				uni.switchTab({
+					url:'../message/message'
+				})
+			},
+			redirectToDetailPage(){
+				// 关闭当前页面，跳转到应用内的某个页面。
+				uni.redirectTo({
+					url:'../detail/detail'
+				})
 			}
+		},
+		onUnload() {
+			console.log('页面卸载了！！！')
 		}
 	}
 </script>
 
 <style>
-
+	view{
+		padding: 20rpx;
+	}
+navigator{
+	color: #007AFF;
+	text-decoration: underline;
+	line-height: 60rpx;
+}
+image{
+	width: 200rpx;
+	height: 200rpx;
+}
 </style>

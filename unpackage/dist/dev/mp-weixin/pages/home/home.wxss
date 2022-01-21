@@ -1,0 +1,14 @@
+
+view{
+		padding: 20rpx;
+}
+navigator{
+	color: #007AFF;
+	text-decoration: underline;
+	line-height: 60rpx;
+}
+image{
+	width: 200rpx;
+	height: 200rpx;
+}
+

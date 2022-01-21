@@ -28,6 +28,9 @@
 	/* color: red; */
 	font-size: 30rpx;
 }
+view {
+  color: green;
+}
 .box1 {
   width: 375rpx;
   height: 375rpx;

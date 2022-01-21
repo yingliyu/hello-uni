@@ -17,7 +17,9 @@
 
 <style>
 	/*每个页面公共css */
-	@import url("./static/fonts/iconfont.css");
+	@import "@/static/fonts/iconfont.css";
+	/* @import url("./static/fonts/iconfont.css"); */
+	@import "~@/static/fonts/font-cop.css";
 	.box1{
 		color: #fff;
 	}

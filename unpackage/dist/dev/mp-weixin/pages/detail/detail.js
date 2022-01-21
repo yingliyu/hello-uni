@@ -165,6 +165,10 @@ var _default =
 
 
   },
+  // 获取上一页传入的数据
+  onLoad: function onLoad(options) {
+    console.log(options);
+  },
   methods: {} };exports.default = _default;
 
 /***/ }),

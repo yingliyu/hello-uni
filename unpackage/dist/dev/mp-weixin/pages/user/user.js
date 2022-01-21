@@ -128,7 +128,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
 //
 //
 //
@@ -141,7 +145,46 @@ var _default =
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+
+    getHandle: function getHandle() {
+      uni.request({
+        url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
+        success: function success(res) {
+          console.log(res);
+        } });
+
+    },
+    saveData: function saveData() {
+      // uni.setStorage({
+      // 	key:'id',
+      // 	data:100,
+      // 	success() {
+      // 		console.log('存储成功！')
+      // 	}
+      // })
+      uni.setStorageSync('id', 80);
+    },
+    getData: function getData() {
+      // uni.getStorage({
+      // 	key:"id",
+      // 	success(res) {
+      // 		console.log('获取成功：',res)
+      // 	}
+      // })
+      var res = uni.getStorageSync('id');
+      console.log(res);
+    },
+    delData: function delData() {
+      // uni.removeStorage({
+      // 	key:'id',
+      // 	success() {
+      // 		console.log('删除成功')
+      // 	}
+      // })
+      uni.removeStorageSync('id');
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

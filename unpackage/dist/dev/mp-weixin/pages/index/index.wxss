@@ -25,6 +25,8 @@
 /* 透明度 */
 /* 文章场景相关 */
 .content {
+  background: #D1EEEE url(/static/bg1.png) no-repeat;
+  background-size: contain;
   padding: 10rpx;
 }
 .content .list-wrapper {

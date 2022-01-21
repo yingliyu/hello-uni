@@ -1,1 +1,1 @@
-<view>用户中心</view>
+<view><button type="primary" data-event-opts="{{[['tap',[['getHandle',['$event']]]]]}}" bindtap="__e">发送Get请求</button><button type="default" data-event-opts="{{[['tap',[['saveData',['$event']]]]]}}" bindtap="__e">数据存储</button><button type="primary" data-event-opts="{{[['tap',[['getData',['$event']]]]]}}" bindtap="__e">数据获取</button><button type="primary" data-event-opts="{{[['tap',[['delData',['$event']]]]]}}" bindtap="__e">移除数据</button></view>
